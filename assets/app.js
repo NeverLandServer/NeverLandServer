@@ -20,19 +20,19 @@ document.addEventListener("DOMContentLoaded", function() {
             {
                 "username": "EncryptSL",
                 "description": "Technik/Developer",
-                "twitch": "#",
-                "youtube": "#"
+                "twitch": "https://www.twitch.tv/encryptsl",
+                "youtube": "https://www.youtube.com/channel/UCobzi5OuO_iQMXfDpljogAg"
             },
             {
                 "username": "korspeed_cz",
                 "description": "Kordinátor a Milovník Anime",
-                "twitch": "#",
+                "twitch": "https://www.twitch.tv/korspeeddash",
                 "youtube": "#"
             },
             {
                 "username": "TheGalasde",
                 "description": "Ministr pro alkohol",
-                "twitch": "#",
+                "twitch": "https://www.twitch.tv/thegalasde",
                 "youtube": "#"
             },
             {
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function() {
             {
                 "username": "FireWaterGame",
                 "description": "Streamer asi ?!",
-                "twitch": "#",
+                "twitch": "https://www.twitch.tv/firewater1975",
                 "youtube": "#"
             },
             {

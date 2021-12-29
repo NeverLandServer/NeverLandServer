@@ -88,9 +88,17 @@ document.addEventListener("DOMContentLoaded", function() {
                 "description": "Člen",
                 "twitch": "#",
                 "youtube": "#"
+            },
+            {
+                "username": "Lilik_Cze",
+                "description": "Člen",
+                "twitch": "#",
+                "youtube": "#"
             }
         ]
     }
+
+    document.getElementById("membersInList").innerText = `Na serveru je ${json.members.length}`
 
     json.members.forEach(function (item) {
         document.getElementById("members").innerHTML += `
@@ -100,10 +108,10 @@ document.addEventListener("DOMContentLoaded", function() {
         <h2>${item.username}</h2>
             <p>${item.description}</p>
             <p>
-                <a class="btn btn-secondary" href="${item.twitch}">Twitch</a>
-                <a class="btn btn-primary" href="${item.youtube}">Youtube</a>
+                <a class="btn btn-sm btn-secondary" target="_blank" href="${item.twitch}">Twitch</a>
+                <a class="btn btn-sm btn-primary" target="_blank" href="${item.youtube}">Youtube</a>
             </p>
         </div>
-        ` 
+        `
     })
 })

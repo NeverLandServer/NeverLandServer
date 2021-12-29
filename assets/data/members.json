@@ -1,16 +1,83 @@
 {
+    //For now this list was implemented into app.js
     "members": [
         {
             "username": "Wzarek755",
             "description": "Majitel",
-            "twitch": "",
-            "youtube": ""
+            "twitch": "#",
+            "youtube": "#"
         },
         {
             "username": "EncryptSL",
             "description": "Technik/Developer",
-            "twitch": "",
-            "youtube": ""
+            "twitch": "#",
+            "youtube": "#"
+        },
+        {
+            "username": "korspeed_cz",
+            "description": "Kordinátor a Milovník Anime",
+            "twitch": "#",
+            "youtube": "#"
+        },
+        {
+            "username": "TheGalasde",
+            "description": "Ministr pro alkohol",
+            "twitch": "#",
+            "youtube": "#"
+        },
+        {
+            "username": "a_patress_o",
+            "description": "Člen",
+            "twitch": "#",
+            "youtube": "#"
+        },
+        {
+            "username": "venh0",
+            "description": "Člen",
+            "twitch": "#",
+            "youtube": "#"
+        },
+        {
+            "username": "Bronze_Player_OP",
+            "description": "Člen",
+            "twitch": "#",
+            "youtube": "#"
+        },
+        {
+            "username": "Mifuyu",
+            "description": "Milovnice Anime",
+            "twitch": "#",
+            "youtube": "#"
+        },
+        {
+            "username": "SirWalterLoxxley",
+            "description": "Člen",
+            "twitch": "#",
+            "youtube": "#"
+        },
+        {
+            "username": "Pikomil",
+            "description": "Člen",
+            "twitch": "#",
+            "youtube": "#"
+        },
+        {
+            "username": "godTomex",
+            "description": "Člen",
+            "twitch": "#",
+            "youtube": "#"
+        },
+        {
+            "username": "FireWaterGame",
+            "description": "Streamer asi ?!",
+            "twitch": "#",
+            "youtube": "#"
+        },
+        {
+            "username": "Snajpy17cz",
+            "description": "Člen",
+            "twitch": "#",
+            "youtube": "#"
         }
     ]
 }

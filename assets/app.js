@@ -9,12 +9,93 @@ function fetchJSON(param) {
 
 document.addEventListener("DOMContentLoaded", function() { 
 
-    const json = fetchJSON("data/members.json")
+    const json = {
+        "members": [
+            {
+                "username": "Wzarek755",
+                "description": "Majitel",
+                "twitch": "#",
+                "youtube": "#"
+            },
+            {
+                "username": "EncryptSL",
+                "description": "Technik/Developer",
+                "twitch": "#",
+                "youtube": "#"
+            },
+            {
+                "username": "korspeed_cz",
+                "description": "Kordinátor a Milovník Anime",
+                "twitch": "#",
+                "youtube": "#"
+            },
+            {
+                "username": "TheGalasde",
+                "description": "Ministr pro alkohol",
+                "twitch": "#",
+                "youtube": "#"
+            },
+            {
+                "username": "a_patress_o",
+                "description": "Člen",
+                "twitch": "#",
+                "youtube": "#"
+            },
+            {
+                "username": "venh0",
+                "description": "Člen",
+                "twitch": "#",
+                "youtube": "#"
+            },
+            {
+                "username": "Bronze_Player_OP",
+                "description": "Člen",
+                "twitch": "#",
+                "youtube": "#"
+            },
+            {
+                "username": "Mifuyu",
+                "description": "Milovnice Anime",
+                "twitch": "#",
+                "youtube": "#"
+            },
+            {
+                "username": "SirWalterLoxxley",
+                "description": "Člen",
+                "twitch": "#",
+                "youtube": "#"
+            },
+            {
+                "username": "Pikomil",
+                "description": "Člen",
+                "twitch": "#",
+                "youtube": "#"
+            },
+            {
+                "username": "godTomex",
+                "description": "Člen",
+                "twitch": "#",
+                "youtube": "#"
+            },
+            {
+                "username": "FireWaterGame",
+                "description": "Streamer asi ?!",
+                "twitch": "#",
+                "youtube": "#"
+            },
+            {
+                "username": "Snajpy17cz",
+                "description": "Člen",
+                "twitch": "#",
+                "youtube": "#"
+            }
+        ]
+    }
 
     json.members.forEach(function (item) {
         document.getElementById("members").innerHTML += `
         <div class="col-lg-4">
-            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+            <img class="rounded-circle" width="128" height="128" title="avatar" src="https://mc-heads.net/avatar/${item.username}">
 
         <h2>${item.username}</h2>
             <p>${item.description}</p>

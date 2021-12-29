@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
             },
             {
                 "username": "a_patress_o",
-                "description": "Člen",
+                "description": "Ochránce zvířat",
                 "twitch": "#",
                 "youtube": "#"
             },
@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function() {
         ]
     }
 
-    document.getElementById("membersInList").innerText = `Na serveru je ${json.members.length}`
+    document.getElementById("membersInList").innerText = `Na serveru je ${json.members.length} členů`
 
     json.members.forEach(function (item) {
         document.getElementById("members").innerHTML += `

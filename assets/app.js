@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function() {
     json.members.forEach(function (item) {
         document.getElementById("members").innerHTML += `
         <div class="col-lg-4">
-            <img class="rounded-circle" width="128" height="128" title="avatar" src="https://mc-heads.net/avatar/${item.username}">
+            <img class="rounded-circle" width="60" height="60" title="${item.username}" src="https://mc-heads.net/avatar/${item.username}">
 
         <h2>${item.username}</h2>
             <p>${item.description}</p>

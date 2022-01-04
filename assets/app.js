@@ -7,6 +7,15 @@ function fetchJSON(param) {
     })   
 }
 
+function socialButtons(link, btnName, clazzName) {
+    if (link === undefined) 
+        return ``
+    else if (link === "#")
+        return ``
+    else
+        return `<a class="btn btn-sm ${clazzName}" target="_blank" href="${link}">${btnName}</a>`
+}
+
 document.addEventListener("DOMContentLoaded", function() { 
 
     const json = {
@@ -102,14 +111,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
     json.members.forEach(function (item) {
         document.getElementById("members").innerHTML += `
-        <div class="col-lg-4">
+        <div class="col-lg-4 mb-2">
             <img class="rounded-circle" width="60" height="60" title="${item.username}" src="https://mc-heads.net/avatar/${item.username}">
 
         <h2>${item.username}</h2>
-            <p>${item.description}</p>
+            <p><span class="badge bg-secondary text-white">${item.description}</span></p>
             <p>
-                <a class="btn btn-sm btn-secondary" target="_blank" href="${item.twitch}">Twitch</a>
-                <a class="btn btn-sm btn-primary" target="_blank" href="${item.youtube}">Youtube</a>
+                ${socialButtons(item.twitch, "Twitch", "btn-warning")}
+                ${socialButtons(item.youtube, "Youtube", "btn-primary")}
             </p>
         </div>
         `

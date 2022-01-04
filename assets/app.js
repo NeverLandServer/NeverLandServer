@@ -1,12 +1,3 @@
-function fetchJSON(param) {
-    return fetch(param).then(response => {
-        if (response.status >= 400)
-            return null
-
-        return response.text
-    })   
-}
-
 function socialButtons(link, btnName, clazzName) {
     if (link === undefined) 
         return ``

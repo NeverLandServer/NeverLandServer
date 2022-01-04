@@ -16,111 +16,24 @@ function socialButtons(link, btnName, clazzName) {
         return `<a class="btn btn-sm ${clazzName}" target="_blank" href="${link}">${btnName}</a>`
 }
 
-document.addEventListener("DOMContentLoaded", function() { 
-
-    const json = {
-        "members": [
-            {
-                "username": "Wzarek755",
-                "description": "Majitel",
-                "twitch": "#",
-                "youtube": "#"
-            },
-            {
-                "username": "EncryptSL",
-                "description": "Technik/Developer",
-                "twitch": "https://www.twitch.tv/encryptsl",
-                "youtube": "https://www.youtube.com/channel/UCobzi5OuO_iQMXfDpljogAg"
-            },
-            {
-                "username": "korspeed_cz",
-                "description": "Kordinátor a Milovník Anime",
-                "twitch": "https://www.twitch.tv/korspeeddash",
-                "youtube": "#"
-            },
-            {
-                "username": "TheGalasde",
-                "description": "Ministr pro alkohol",
-                "twitch": "https://www.twitch.tv/thegalasde",
-                "youtube": "#"
-            },
-            {
-                "username": "a_patress_o",
-                "description": "Ochránce zvířat",
-                "twitch": "#",
-                "youtube": "#"
-            },
-            {
-                "username": "venh0",
-                "description": "Člen",
-                "twitch": "#",
-                "youtube": "#"
-            },
-            {
-                "username": "Bronze_Player_OP",
-                "description": "Člen",
-                "twitch": "#",
-                "youtube": "#"
-            },
-            {
-                "username": "Mifuyu",
-                "description": "Milovnice Anime",
-                "twitch": "#",
-                "youtube": "#"
-            },
-            {
-                "username": "SirWalterLoxxley",
-                "description": "Člen",
-                "twitch": "#",
-                "youtube": "#"
-            },
-            {
-                "username": "Pikomil",
-                "description": "Člen",
-                "twitch": "#",
-                "youtube": "#"
-            },
-            {
-                "username": "godTomex",
-                "description": "Člen",
-                "twitch": "#",
-                "youtube": "#"
-            },
-            {
-                "username": "FireWaterGame",
-                "description": "Streamer asi ?!",
-                "twitch": "https://www.twitch.tv/firewater1975",
-                "youtube": "#"
-            },
-            {
-                "username": "Snajpy17cz",
-                "description": "Člen",
-                "twitch": "#",
-                "youtube": "#"
-            },
-            {
-                "username": "Lilik_Cze",
-                "description": "Člen",
-                "twitch": "#",
-                "youtube": "#"
-            }
-        ]
-    }
-
-    document.getElementById("membersInList").innerText = `Na serveru je ${json.members.length} členů`
-
-    json.members.forEach(function (item) {
-        document.getElementById("members").innerHTML += `
-        <div class="col-lg-4 mb-2">
-            <img class="rounded-circle" width="60" height="60" title="${item.username}" src="https://mc-heads.net/avatar/${item.username}">
-
-        <h2>${item.username}</h2>
-            <p><span class="badge bg-secondary text-white">${item.description}</span></p>
-            <p>
-                ${socialButtons(item.twitch, "Twitch", "btn-warning")}
-                ${socialButtons(item.youtube, "Youtube", "btn-primary")}
-            </p>
-        </div>
-        `
+document.addEventListener("DOMContentLoaded", function() {
+    fetch('assets/data/members.json').then((response) => {
+        return response.json();
+    }).then((data) => {
+        document.getElementById("membersInList").innerText = `Na serveru je ${data.members.length} členů`
+        data.members.forEach(function (item) {
+            document.getElementById("members").innerHTML += `
+            <div class="col-lg-4 mb-2">
+                <img class="rounded-circle" width="60" height="60" title="${item.username}" src="https://mc-heads.net/avatar/${item.username}">
+    
+            <h2>${item.username}</h2>
+                <p><span class="badge bg-secondary text-white">${item.description}</span></p>
+                <p>
+                    ${socialButtons(item.twitch, "Twitch", "btn-warning")}
+                    ${socialButtons(item.youtube, "Youtube", "btn-primary")}
+                </p>
+            </div>
+            `
+        })
     })
 })

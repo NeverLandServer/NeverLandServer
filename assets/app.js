@@ -4,7 +4,7 @@ function socialButtons(link, btnName, clazzName) {
     else if (link === "#")
         return ``
     else
-        return `<a class="btn btn-sm ${clazzName}" target="_blank" href="${link}">${btnName}</a>`
+        return `<a class="btn btn-sm ${clazzName}" target="_blank" href="${link}" title="${btnName}"><i class="fab fa-${btnName.toLowerCase()}"></i> ${btnName}</a>`
 }
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <p>
                     ${socialButtons(item.twitch, "Twitch", "btn-warning")}
                     ${socialButtons(item.youtube, "Youtube", "btn-primary")}
+                    ${socialButtons(item.instagram, "Instagram", "btn-secondary")}
                 </p>
             </div>
             `

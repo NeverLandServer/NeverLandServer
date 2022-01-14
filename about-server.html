@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,33 +7,37 @@
     <title>NeverLand - 1.18.1</title>
     <link rel="icon" href="assets/img/icon.jpg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="/assets/css/main.css" rel="stylesheet">
 </head>
-<body class="bg-dark">
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item active text-center">
-            <a class="nav-link" href="index.html">DOMOV</a>
-          </li>
-          <li class="nav-item text-center">
-            <a class="nav-link active" href="about-server.html">O SERVERU</a>
-          </li>
-          <li class="nav-item text-center">
-            <a class="nav-link" href="members.html">ČLENOVÉ</a>
-          </li>
-        </ul>
-    </nav>
+<body class="d-flex h-100 text-center text-white bg-dark">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="mb-auto">
+          <div>
+            <h3 class="float-md-start mb-0">NEVERLAND</h3>
+            <nav class="nav nav-masthead justify-content-center float-md-end">
+              <a class="nav-link" href="index.html">DOMOV</a>
+              <a class="nav-link active" aria-current="page" href="about-server.html">O SERVERU</a>
+              <a class="nav-link" href="members.html">ČLENOVÉ</a>
+            </nav>
+          </div>
+        </header>
 
-    <main class="bg-light">
-        <div class="container px-4 py-5" id="featured-3">
+    <main class="px-3 text-white">
+        <h1>NĚJAKÉ INFORMACE K SERVERU</h1>
+        <div class="container px-4 py-5 card-box text-start" id="featured-3">
             <div class="row">
                 <div class="col">
-                    <h2>O serveru (NeverLand)</h2>
-                    <p>Dne 28.12.2021 - Spuštěna verze <b>1.18.1</b></p>
-
-                    <p>Dne 30.6.2021 - První spuštění serveru</p>
+                    <h2>Historie</h2>
+                    <p>Dne 3.1.2022 - Zabit druhý drak po resetu endu.</p>
+                    <p>Dne 28.12.2021 - Spuštěna verze <b>1.18.1</b> a resetován end.</p>
+                    <p>Dne 11.12.2021 - Spuštěn projekt stavba metra a design. <b>Author Metra Korspeed a další..</b></p>
+                    <o>Dne 8.7.2021 - Zabit první drak na serveru.</o>
+                    <p>Dne 30.6.2021 - První spuštění serveru.</p>
                 </div>
                 <div class="col">
                     <h2>Časté dotazy</h2>
+                    <b>Hosting</b>
+                    <p>Kočkopes... tajné</p>
                     <b>Seed Mapy</b>
                     <p>K čemu by ti byl :)</p>
                     <b>Pluginy</b>
@@ -50,12 +54,10 @@
         </div>
     </main>
 
-    <footer class="bg-dark">
-        <div class="container py-5 text-white">
-            <p><b>&copy; <span id="year"></span></b> neverlandserver.github.io</p>
-        </div>
+    <footer class="mt-auto text-white-50">
+        <p><b>&copy; <span id="year"></span></b> neverlandserver.github.io - Based on Bootstrap template</p>
     </footer>
-
+    </div>
     <script>
         document.getElementById("year").innerHTML = new Date().getFullYear();
     </script>

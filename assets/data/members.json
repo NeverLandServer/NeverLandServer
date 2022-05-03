@@ -2,6 +2,7 @@
     "members": [
         {
             "username": "Wzarek755",
+            "uuid": "8dd6b6cb-8de7-4091-884e-062c0d5c074f",
             "description": "Majitel",
             "twitch": "#",
             "youtube": "#",
@@ -9,12 +10,14 @@
         },
         {
             "username": "EncryptSL",
+            "uuid": "0ba5241b-e841-4908-8da4-e8bec9a8f902",
             "description": "Technik/Developer",
             "twitch": "https://www.twitch.tv/encryptsl",
             "youtube": "https://www.youtube.com/channel/UCobzi5OuO_iQMXfDpljogAg"
         },
         {
             "username": "korspeed_cz",
+            "uuid": "2c655f8f-e808-413a-a460-523fd547dc5d",
             "description": "Kordinátor a Milovník Anime",
             "twitch": "https://www.twitch.tv/korspeeddash",
             "youtube": "https://www.youtube.com/channel/UCJNZ3rR4Ag3TFhdRuPLlLmA",
@@ -22,6 +25,7 @@
         },
         {
             "username": "TheGalasde",
+            "uuid": "bd584eeb-2d92-4565-858d-b6aa7d70c357",
             "description": "Ministr pro alkohol",
             "twitch": "https://www.twitch.tv/thegalasde",
             "youtube": "#",
@@ -29,6 +33,7 @@
         },
         {
             "username": "a_patress_o",
+            "uuid": "5fda563e-3f43-4001-9707-415dfbf28287",
             "description": "Ochránce zvířat",
             "twitch": "#",
             "youtube": "#",
@@ -36,6 +41,7 @@
         },
         {
             "username": "venh0",
+            "uuid": "2b0bb5e5-7c24-4280-b594-027d2f2f444b",
             "description": "Člen",
             "twitch": "#",
             "youtube": "#",
@@ -43,6 +49,7 @@
         },
         {
             "username": "Bronze_Player_OP",
+            "uuid": "a3e7185c-b6e9-4b8a-8470-cb10914dbe3f",
             "description": "Člen",
             "twitch": "#",
             "youtube": "#",
@@ -50,6 +57,7 @@
         },
         {
             "username": "Mifuyu",
+            "uuid": "a3e7185c-b6e9-4b8a-8470-cb10914dbe3f",
             "description": "Milovnice Anime",
             "twitch": "#",
             "youtube": "#",
@@ -57,6 +65,7 @@
         },
         {
             "username": "SirWalterLoxxley",
+            "uuid": "a3e7185c-b6e9-4b8a-8470-cb10914dbe3f",
             "description": "Člen",
             "twitch": "#",
             "youtube": "#",
@@ -64,13 +73,15 @@
         },
         {
             "username": "Pikomil",
+            "uuid": "aafceb59-dd35-4050-b13b-03c8c4adc9eb",
             "description": "Člen",
             "twitch": "#",
             "youtube": "#",
             "instagram": "#"
         },
         {
-            "username": "godTomex",
+            "username": "Rusacik",
+            "uuid": "8b8af187-3ee6-4185-be01-b9294486239e",
             "description": "Člen",
             "twitch": "#",
             "youtube": "#",
@@ -78,6 +89,7 @@
         },
         {
             "username": "FireWaterGame",
+            "uuid": "1467c4e8-7908-4690-bdbf-b3bd22e88ecb",
             "description": "Ten co tu věčně nechodí ?!",
             "twitch": "https://www.twitch.tv/firewater1975",
             "youtube": "#",
@@ -85,13 +97,15 @@
         },
         {
             "username": "Snajpy17cz",
+            "uuid": "637b1480-b5cb-4b75-ac11-23fbd4a1f854",
             "description": "Člen",
             "twitch": "#",
             "youtube": "#",
             "instagram": "#"
         },
         {
-            "username": "Lilik_Cze",
+            "username": "Sezzy_CZ",
+            "uuid": "56d3ad9b-081b-4235-a2b8-7d51e2b59b8a",
             "description": "Člen",
             "twitch": "#",
             "youtube": "#",

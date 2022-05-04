@@ -40,6 +40,6 @@ document.addEventListener("DOMContentLoaded", function() {
         return response.json();
     }).then((data) => {
         var rand = Math.floor(Math.random()*data.members.length);
-        document.getElementById("randomAv").innerHTML = `<img class="avatar" src="https://visage.surgeplay.com/bust/${data.members[rand].uuid}">`
+        document.getElementById("randomAv").innerHTML = `<img class="avatar" src="https://visage.surgeplay.com/bust/${data.members[rand].uuid}" title="${data.members[rand].username}">`
     })
 })

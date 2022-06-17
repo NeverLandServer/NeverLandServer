@@ -4,7 +4,7 @@ function socialButtons(link, btnName, clazzName) {
     else if (link === "#")
         return ``
     else
-        return `<a class="btn btn-sm ${clazzName}" target="_blank" href="${link}" title="${btnName}"><i class="bi bi-${btnName.toLowerCase()}"></i> ${btnName}</a>`
+        return `<a class="btn btn-sm ${clazzName}" target="_blank" href="${link}" title="${btnName}"><i class="bi bi-${btnName.toLowerCase()}"></i></a>`
 }
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <div class="row g-4">
                         <div class="col col-md-3">
                             <h5 class="card-title">
-                                <img src="https://mc-heads.net/avatar/${item.username}" class="rounded-circle mb-3" alt="avt_${item.username}" title="${item.username}" height="50" />
+                                <img src="https://minotar.net/avatar/${item.uuid}" class="rounded-circle mb-3" alt="avt_${item.username}" title="${item.username}" height="50" />
                             </h5>
                         </div>
                         <div class="col-md">

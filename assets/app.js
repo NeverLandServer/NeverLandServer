@@ -1,5 +1,5 @@
 function socialButtons(link, btnName, clazzName) {
-    if (link === undefined) 
+    if (link === undefined)
         return ``
     else if (link === "#")
         return ``
@@ -7,12 +7,10 @@ function socialButtons(link, btnName, clazzName) {
         return `<a class="btn btn-sm ${clazzName}" target="_blank" href="${link}" title="${btnName}"><i class="bi bi-${btnName.toLowerCase()}"></i></a>`
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    fetch('assets/data/members.json').then((response) => {
-        return response.json();
-    }).then((data) => {
-        document.getElementById("membersInList").innerText = `Na serveru je ${data.members.length} členů`
-        data.members.forEach(function (item) {
+document.addEventListener("DOMContentLoaded", function () {
+    axios({ method: 'get', url: '/assets/data/members.json' }).then((response) => {
+        document.getElementById("membersInList").innerText = `Na serveru je ${response.data.members.length} členů`
+        response.data.members.forEach(function (item) {
             document.getElementById("members").innerHTML += `
             <div class="col-md-6 col-lg-3">
             <div class="card">
@@ -37,10 +35,8 @@ document.addEventListener("DOMContentLoaded", function() {
             `
         })
     })
-    fetch('assets/data/members.json').then((response) => {
-        return response.json();
-    }).then((data) => {
-        var rand = Math.floor(Math.random()*data.members.length);
-        document.getElementById("randomAv").innerHTML = `<img class="avatar" src="https://visage.surgeplay.com/bust/${data.members[rand].uuid}" title="${data.members[rand].username}">`
+    axios({ method: 'get', url: '/assets/data/members.json' }).then((response) => {
+        var rand = Math.floor(Math.random() * response.data.members.length);
+        document.getElementById("randomAv").innerHTML = `<img class="avatar" src="https://visage.surgeplay.com/bust/${response.data.members[rand].uuid}" title="${response.data.members[rand].username}">`
     })
 })

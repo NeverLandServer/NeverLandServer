@@ -6,14 +6,16 @@
             "description": "Majitel",
             "twitch": "#",
             "youtube": "#",
-            "instagram": "#"
+            "instagram": "#",
+            "donate": "#"
         },
         {
             "username": "EncryptSL",
             "uuid": "0ba5241b-e841-4908-8da4-e8bec9a8f902",
             "description": "Technik/Developer",
             "twitch": "https://www.twitch.tv/encryptsl",
-            "youtube": "https://www.youtube.com/channel/UCobzi5OuO_iQMXfDpljogAg"
+            "youtube": "https://www.youtube.com/channel/UCobzi5OuO_iQMXfDpljogAg",
+            "donate": "https://ko-fi.com/encryptsl"
         },
         {
             "username": "korspeed_cz",
@@ -21,7 +23,8 @@
             "description": "Kordinátor",
             "twitch": "https://www.twitch.tv/korspeeddash",
             "youtube": "https://www.youtube.com/channel/UCJNZ3rR4Ag3TFhdRuPLlLmA",
-            "instagram": "#"
+            "instagram": "#",
+            "donate": "#"
         },
         {
             "username": "TheGalasde",
@@ -29,7 +32,8 @@
             "description": "Honored Member",
             "twitch": "https://www.twitch.tv/thegalasde",
             "youtube": "#",
-            "instagram": "#"
+            "instagram": "#",
+            "donate": "#"
         },
         {
             "username": "a_patress_o",
@@ -37,7 +41,8 @@
             "description": "Ochránce zvířat",
             "twitch": "#",
             "youtube": "#",
-            "instagram": "#"
+            "instagram": "#",
+            "donate": "#"
         },
         {
             "username": "venh0",
@@ -45,7 +50,8 @@
             "description": "Honored Member",
             "twitch": "#",
             "youtube": "#",
-            "instagram": "#"
+            "instagram": "#",
+            "donate": "#"
         },
         {
             "username": "Pikomil",
@@ -53,7 +59,8 @@
             "description": "Člen",
             "twitch": "#",
             "youtube": "#",
-            "instagram": "#"
+            "instagram": "#",
+            "donate": "#"
         }
     ]
 }

@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     ${socialButtons(item.twitch, "Twitch", "btn-warning")}
                     ${socialButtons(item.youtube, "Youtube", "btn-primary")}
                     ${socialButtons(item.instagram, "Instagram", "btn-secondary")}
+                    ${socialButtons(item.donate, "cash-coin", "btn-success")}
                 </div>
             </div>
           </div>

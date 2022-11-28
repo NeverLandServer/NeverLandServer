@@ -4,7 +4,7 @@ const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
         <div className="container">
-          <a href="#" className="navbar-brand">NEVERLAND CZ/SK | SEZÓNA 2</a>
+          <a href="./" className="navbar-brand">NEVERLAND CZ/SK | SEZÓNA 2</a>
     
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
             <span className="navbar-toggler-icon"></span>

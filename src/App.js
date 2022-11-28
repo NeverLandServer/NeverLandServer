@@ -7,10 +7,12 @@ import About from './components/about';
 import Faq from './components/faq';
 import History from './components/history';
 import Members from './components/members';
+import Snowfall from 'react-snowfall'
 
 function App() {
   return (
     <div>
+      <Snowfall color="white" snowflakeCount={200} />
       <Navbar/>
       <Header/>
       <Notification/>

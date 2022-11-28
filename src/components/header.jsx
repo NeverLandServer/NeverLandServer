@@ -22,7 +22,7 @@ const Header = () => {
 }
 
 function randomAvatar(uuid, username) {
-    return (<img class="avatar" src={"https://visage.surgeplay.com/bust/"+uuid} title={username}></img>)
+    return (<img class="avatar" src={"https://visage.surgeplay.com/bust/"+uuid} alt={"rn-"+username} title={username}></img>)
 }
 
 export default Header;

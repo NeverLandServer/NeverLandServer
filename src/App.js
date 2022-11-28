@@ -1,6 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/navbar';
+import Header from './components/header';
 import Notification from './components/notification';
 import Donate from './components/donate';
 import About from './components/about';
@@ -12,6 +12,7 @@ function App() {
   return (
     <div>
       <Navbar/>
+      <Header/>
       <Notification/>
       <Donate/>
       <About/>

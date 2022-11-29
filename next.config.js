@@ -3,6 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   crossOrigin: 'anonymous',
   images: {
+    unoptimized: true,
     domains: ['visage.surgeplay.com', 'minotar.net'],
   },
 }

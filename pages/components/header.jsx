@@ -1,8 +1,19 @@
-import Member from "../assets/data/members.json"
-import React from "react";
+import Member from "/json/members.json"
+import {React, useState, useEffect } from "react";
+import Image from "next/image";
 
 const Header = () => {
+
+  const [image, setImage] = useState("")
+
+  const getImage = () => {
     let index = Math.floor(Math.random() * Member.length);
+    setImage(<Image className="avatar" priority src={"https://visage.surgeplay.com/bust/"+Member[index].uuid} width={250} height={250} alt={'rn-'+Member[index].username} title={Member[index].username}/>)
+  }
+
+  useEffect(() => {
+      getImage()
+  }, [])
     return (
     <section className="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
         <div className="container">
@@ -14,15 +25,11 @@ const Header = () => {
                 Server původně vytvořen pro zábavu od práce a kamarády kteří rádi tvoří něco pěkného společně.
               </p>
             </div>
-            <div>{randomAvatar(Member[index].uuid, Member[index].username)}</div>
+            <div>{image}</div>
           </div>
         </div>
       </section>
     )
-}
-
-function randomAvatar(uuid, username) {
-    return (<img className="avatar" src={"https://visage.surgeplay.com/bust/"+uuid} alt={"rn-"+username} title={username}></img>)
 }
 
 export default Header;

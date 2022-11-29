@@ -1,5 +1,6 @@
 import React from "react";
-import Member from "../assets/data/members.json"
+import Member from "/json/members.json"
+import Image from "next/image";
 
 const Members = () => {
     return (
@@ -17,7 +18,7 @@ const Members = () => {
                 <div className="card">
                     <div className="card-body">
                         <h5 className="card-title text-center">
-                            <img src={"https://minotar.net/avatar/"+record.uuid} className="rounded-circle" alt={"avt"+record.username} title={record.username} height="100" />
+                            <Image src={"https://minotar.net/avatar/"+record.uuid} className="rounded-circle" alt={'avt'+record.username} title={record.username} height="100" width="100" /> 
                         </h5>
                         <div className="text-center">
                             <p>{record.username}</p>

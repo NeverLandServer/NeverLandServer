@@ -1,4 +1,4 @@
-import emerald from "../assets/emerald.webp"
+import Image from 'next/image'
 import React from "react";
 
 const History = () => {
@@ -8,7 +8,7 @@ const History = () => {
         <div className="container">
           <div className="row align-items-center justify-content-between">
             <div className="col-md">
-              <img src={emerald} width="400" height="400" className="img-fluid" alt="emerald" />
+              <Image src="/assets/emerald.webp" className="img-fluid" width={500} height={500} alt='emerald' />
             </div>
             <div className="col-md p-5">
               <h2>Historie Serveru</h2>

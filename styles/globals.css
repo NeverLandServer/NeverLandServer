@@ -102,7 +102,7 @@ display: table;
 clear: both;
 }
 .member-background {
-  background-image: url(./assets/member-background.webp);
+  background-image: url(/assets/member-background.webp);
   background-size: cover;
   background-attachment: fixed;
 }

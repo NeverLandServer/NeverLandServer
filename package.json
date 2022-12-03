@@ -7,6 +7,8 @@
     "dev": "next dev",
     "build": "next build",
     "export": "next export",
+    "production": "npm run build && npm run export",
+    "deploy": "npm run production && gh-pages -d out",
     "start": "next start",
     "lint": "next lint"
   },

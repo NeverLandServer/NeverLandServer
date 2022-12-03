@@ -16,6 +16,17 @@ const History = () => {
                 Soupiska historie co se na serveru stala.
               </p>
               <div className="vertical-timeline vertical-timeline--animate vertical-timeline--one-column">
+              <div className="vertical-timeline-item vertical-timeline-element">
+                  <div>
+                    <span className="vertical-timeline-element-icon bounce-in">
+                      <i className="badge badge-dot badge-dot-xl bg-success"> </i>
+                    </span>
+                    <div className="vertical-timeline-element-content bounce-in">
+                      <p>Zabití draka.</p>
+                      <span className="vertical-timeline-element-date">2.12.2022</span>
+                    </div>
+                  </div>
+                </div>
                 <div className="vertical-timeline-item vertical-timeline-element">
                   <div>
                     <span className="vertical-timeline-element-icon bounce-in">

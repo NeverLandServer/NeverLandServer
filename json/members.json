@@ -55,7 +55,16 @@
     {
         "username": "Pikomil",
         "uuid": "aafceb59-dd35-4050-b13b-03c8c4adc9eb",
-        "description": "Člen",
+        "description": "Member",
+        "twitch": "#",
+        "youtube": "#",
+        "instagram": "#",
+        "donate": "#"
+    },
+    {
+        "username": "Mathew_Klusik",
+        "uuid": "4e4e591-a68b-1492-2806-0af851514c642",
+        "description": "Member in Trial Period",
         "twitch": "#",
         "youtube": "#",
         "instagram": "#",

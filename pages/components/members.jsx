@@ -1,21 +1,8 @@
 import React from "react";
+import Member from "/json/members.json"
 import Image from "next/image";
-import {useState, useEffect} from "react"
 
 const Members = () => {
-
-    const [members, setMembers] = useState([])
-
-    const fetchMembers = async () => {
-        const response = await fetch('/api/members')
-        const data = await response.json()
-        setMembers(data)
-    }
-
-    useEffect(() => {
-        fetchMembers()
-    }, [])
-
     return (
         <section id="memberlist" className="p-5 member-background">
         <div className="container">
@@ -25,7 +12,7 @@ const Members = () => {
           </p>
           <div className="row g-4">
             {
-             members.map(record => {
+             Member && Member.map(record => {
                 return (
                 <div className="col-md-6 col-lg-3" key={record.username}>
                 <div className="card">

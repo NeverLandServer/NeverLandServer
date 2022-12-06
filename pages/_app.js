@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="author" content="EncryptSL (ETERNITY_ROOT#PATRIK_KOLAŘÍK)" />
         <meta name="keywords" content="encryptsl, minecraft, neverlandmc" />
-        <title>NeverLand - 1.18.2</title>
+        <title>NeverLand - 1.19.2</title>
       </Head>
       <Component {...pageProps} />
     </>

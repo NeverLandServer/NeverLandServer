@@ -7,6 +7,7 @@ const nextConfig = {
     unoptimized: true,
     domains: ['visage.surgeplay.com', 'minotar.net'],
   },
+  pageExtensions: ['mdx', 'md', 'jsx', 'js', 'tsx', 'ts'],
 }
 
 module.exports = nextConfig

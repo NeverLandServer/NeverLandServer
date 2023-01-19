@@ -15,7 +15,7 @@ const Faq = () => {
               </h2>
               <div id="question-one" className="accordion-collapse collapse" data-bs-parent="#questions">
                 <div className="accordion-body">
-                  EchelonCore, JMusicBot Chunky, ChunkyBorder, VoiceChat
+                  EchelonCore, JMusicBot Chunky, ChunkyBorder..
                 </div>
               </div>
             </div>

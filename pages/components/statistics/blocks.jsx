@@ -8,7 +8,7 @@ const Blocks = () => {
 
     useEffect(() => {
       setLoading(true)
-      fetch('http://encryptsl.cekuj.net/api/minecraft/stats/blocks', {
+      fetch('//encryptsl.cekuj.net/api/minecraft/stats/blocks', {
         method: 'GET',
         headers: {
             accept: 'application/json'

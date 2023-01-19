@@ -8,7 +8,7 @@ const Kills = () => {
 
     useEffect(() => {
       setLoading(true)
-      fetch('http://encryptsl.cekuj.net/api/minecraft/stats/kills', {
+      fetch('//encryptsl.cekuj.net/api/minecraft/stats/kills', {
         method: 'GET',
         headers: {
             accept: 'application/json'

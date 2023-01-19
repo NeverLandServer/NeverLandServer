@@ -7,24 +7,12 @@ import About from './/components/about';
 import Faq from './/components/faq';
 import History from './/components/history';
 import Members from './/components/members';
-import Snowfall from 'react-snowfall'
 import {React, useEffect, useState } from 'react';
+import Stats from './components/stats';
 
 export default function Home() {
-
-  const [snow, setSnow] = useState("")
-
-  const getSnow = () => {
-    setSnow(<Snowfall color='white' snowflakeCount={200}/>)
-  }
-
-  useEffect(() => {
-    getSnow()
-  }, [])
-
   return (
     <>
-      {snow}
       <Head/>
       <Navbar />
       <Header />
@@ -33,6 +21,7 @@ export default function Home() {
       <About />
       <History />
       <Faq />
+      <Stats />
       <Members />
     </>
   )

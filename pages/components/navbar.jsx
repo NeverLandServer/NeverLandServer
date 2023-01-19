@@ -21,6 +21,9 @@ const Navbar = () => {
               <li className="nav-item">
                 <a href="#memberlist" className="nav-link">ČLENOVÉ</a>
               </li>
+              <li className="nav-item">
+                <a href="#stats" className="nav-link">STATISTIKY</a>
+              </li>
             </ul>
           </div>
         </div>

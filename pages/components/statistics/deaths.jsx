@@ -38,7 +38,7 @@ const Deaths = () => {
                     {stats && stats.map(stats => (
                           <tr key={ stats.username }>
                             <th scope="row">{ stats.id }</th>
-                            <td><img src={"https://minotar.net/avatar/"+stats.uuid+"/32"}></img> { stats.username }</td>
+                            <td><img src={"https://visage.surgeplay.com/bust/36/"+stats.uuid}></img> { stats.username }</td>
                             <td>{ stats.deaths }</td>
                           </tr>
                     ))}

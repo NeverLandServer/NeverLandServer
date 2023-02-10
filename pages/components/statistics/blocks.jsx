@@ -1,5 +1,6 @@
 import React from "react";
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from "react"
+import Link from 'next/link'
 
 const Blocks = () => {
 
@@ -38,7 +39,7 @@ const Blocks = () => {
                     {stats && stats.map(stats => (
                           <tr key={ stats.username }>
                             <th scope="row">{ stats.id }</th>
-                            <td><img src={"https://visage.surgeplay.com/bust/36/"+stats.uuid}></img> { stats.username }</td>
+                            <td><img src={"https://visage.surgeplay.com/bust/36/"+stats.uuid}></img>{ stats.username }</td>
                             <td>{ stats.blocks }</td>
                           </tr>
                     ))}

@@ -1,6 +1,7 @@
 import React from "react";
 import Member from "/json/members.json"
 import Image from "next/image";
+import Link from "next/link";
 
 const Members = () => {
     return (
@@ -21,7 +22,7 @@ const Members = () => {
                             <Image src={"https://minotar.net/avatar/"+record.uuid} className="rounded-circle" alt={'avt'+record.username} title={record.username} height="100" width="100" /> 
                         </h5>
                         <div className="text-center">
-                            <p>{record.username}</p>
+                            <p><Link href={ {pathname: `/stats/${record.uuid}`} }>{ record.username }</Link></p>
                             <span className="badge bg-secondary text-white">{record.description}</span>
                         </div>
                         <div className="text-center">

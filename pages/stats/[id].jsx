@@ -1,7 +1,17 @@
 import React, { useState, useEffect } from "react"
 import { useRouter } from "next/router"
-import ErrorPage from "./ErrorPage"
 import Link from "next/link"
+
+const ErrorPage = () => {
+    return (
+        <section className="container my-5">
+            <div className="text-center">
+                <h1>Uživatel nebyl nalezen !</h1>
+                <small className="lead">Tento uživatel nemá přiřazené statistiky !</small>
+            </div>
+        </section>
+    )
+}
 
 const PlayerPage = () => {
     const router = useRouter();
@@ -32,7 +42,7 @@ const PlayerPage = () => {
 
     if (isLoading) return <p>Loading...</p>
     if (error == 'Database not have data.') {
-        return (ErrorPage)
+        return ErrorPage()
     } else {
         return (
             <div className="container col-md-9 col-lg-10 px-md-4 my-3">

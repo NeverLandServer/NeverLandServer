@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document'
+import Navbar from './components/navbar'
 
 export default function Document() {
     return (
@@ -10,6 +11,7 @@ export default function Document() {
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
             </Head>
             <body>
+                <Navbar />
                 <Main />
                 <NextScript />
                 <footer className="p-5 bg-dark text-white text-center position-relative">

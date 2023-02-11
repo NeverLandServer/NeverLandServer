@@ -14,7 +14,6 @@ export default function Home() {
   return (
     <>
       <Head/>
-      <Navbar />
       <Header />
       <Notification />
       <Donate />

@@ -1,32 +1,33 @@
 import React, { useState, useEffect } from "react"
-import { useRouter } from 'next/router'
-import Link from "next/link";
+import { useRouter } from "next/router"
+import ErrorPage from "./ErrorPage"
+import Link from "next/link"
 
 const PlayerPage = () => {
-    const [player, setData] = useState(null);
+    const router = useRouter();
+    const {id} = router.query
+    const [player, setData] = useState([]);
+    const [playerImg, setImg] = useState("")
     const [isLoading, setLoading] = useState(false)
-    const router = useRouter()
-    const route = router.query["id"];
 
-    const fetchData = () => {
-        fetch(`//encryptsl.cekuj.net/api/minecraft/player/${route}`, {
-            method: 'GET',
-            headers: {
-                accept: 'application/json'
-            },
-        }).then((res) => res.json())
-            .then((stats) => {
+    useEffect(() => {
+
+        if (!id) {
+            return;
+        }
+
+        const statsRequest = async () => {
+            await axios.get(`//encryptsl.cekuj.net/api/minecraft/player/${id}`).then(res => res.data ).then((stats) => {
+                setImg(<img src={"https://visage.surgeplay.com/full/200/" + stats.uuid} className="rounded" />)
                 setData(stats)
                 setLoading(false)
             })
-    }
-
-    useEffect(() => {
-        fetchData()
-    });
+        }
+        statsRequest()
+    }, [id]);
 
     if (isLoading) return <p>Loading...</p>
-    if (!player) return <p>No profile data</p>
+    if (!player) return (ErrorPage)
 
     return (
         <div className="container col-md-9 col-lg-10 px-md-4 my-3">
@@ -43,7 +44,7 @@ const PlayerPage = () => {
                     <div className="card mb-3 text-center">
                         <div className="card-header text-bg-dark">AKTUÁLNÍ SKIN</div>
                         <div className="card-body">
-                            <img src={"https://visage.surgeplay.com/full/200/" + player.uuid} className="rounded" />
+                            {playerImg}
                         </div>
                     </div>
                 </div>

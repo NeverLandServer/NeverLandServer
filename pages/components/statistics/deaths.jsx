@@ -1,3 +1,4 @@
+import axios from "axios";
 import React from "react";
 import { useState, useEffect } from 'react'
 
@@ -8,12 +9,7 @@ const Deaths = () => {
 
     useEffect(() => {
       setLoading(true)
-      fetch('//encryptsl.cekuj.net/api/minecraft/stats/deaths', {
-        method: 'GET',
-        headers: {
-            accept: 'application/json'
-        },
-      }).then((res) => res.json())
+      axios.get('//encryptsl.cekuj.net/api/minecraft/stats/deaths').then((res) => res.data)
         .then((stats) => {
           setData(stats)
           setLoading(false)

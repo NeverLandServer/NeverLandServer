@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react"
 import Link from 'next/link'
+import axios from "axios";
 
 const Blocks = () => {
 
@@ -9,12 +10,7 @@ const Blocks = () => {
 
     useEffect(() => {
       setLoading(true)
-      fetch('//encryptsl.cekuj.net/api/minecraft/stats/blocks', {
-        method: 'GET',
-        headers: {
-            accept: 'application/json'
-        },
-      }).then((res) => res.json())
+      axios.get('//encryptsl.cekuj.net/api/minecraft/stats/blocks').then((res) => res.data)
         .then((stats) => {
           setData(stats)
           setLoading(false)

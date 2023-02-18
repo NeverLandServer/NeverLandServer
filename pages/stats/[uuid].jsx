@@ -69,7 +69,7 @@ export async function getStaticPaths() {
                 params: { uuid : p.full_uuid.toString() }
             }
         )),
-        fallback: false
+        fallback: true
     }
 }
 
@@ -79,6 +79,7 @@ export async function getStaticProps({params}) {
     return {
         props: {
             player
-        }
+        },
+        revalidate: 1,
     }
 }
